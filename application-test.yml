@@ -1,0 +1,12 @@
+server:
+  port: 8888
+#配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/j2000?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: spc2000
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql语句打印
